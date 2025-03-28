@@ -1,0 +1,440 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(93, 93, 93);
+}
+
+.content {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+.f-content{
+  padding-top: 90px;
+}
+.imag{
+  height: 350px;
+  width: 250px;
+  border-radius: 90px;
+  
+}
+.imaj{
+  height: 350px;
+  width: 250px;
+  border-radius: 90px;
+}
+
+.fixed-button {
+  /* Stays in place even when scrolling */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 9999; /* Ensures it's always on top */
+  background-color: #ff4500; /* Eye-catching color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.fixed-button:hover {
+  background-color: #ff2200;
+  transform: scale(1.05);
+}
+/* Add this to a separate CSS file (e.g., Card.css) and import it in your Card component */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.search{
+  justify-content: center;
+  text-align: center;
+ 
+
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(210, 207, 211);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+.cards {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(210, 207, 211);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+.cards-new {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(199, 209, 214);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 50px;
+}
+.card-new {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(199, 209, 214);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  border-radius: 50px;
+}
+.card-new:hover{
+  cursor: pointer;
+  background-color: rgb(161, 161, 161);
+}
+.add-book-form{
+  
+  width: 40px;
+ 
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Popup Container */
+.popup-content {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200%;
+  max-width: 500px;
+
+ 
+ 
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff4136;
+  transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+  color: #ff0000;
+}
+
+/* Form Styling within Popup */
+
+
+.popup-form button {
+  padding: 10px 15px;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-form button:hover {
+  background-color: #0063a5;
+}
+
+/* Animation (Optional) */
+@keyframes popupSlideIn {
+  from {
+      opacity: 0;
+      transform: scale(0.7);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.popup-content {
+  animation: popupSlideIn 0.3s ease-out;
+}
+.full-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: lightgray;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+.gt{
+  color: navy;
+  width: 30px;
+  height: 30px;
+}
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  background: #f8f8f8;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+
+.search-bar-container input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  color: yellow;
+}
+
+.search-bar-container input::placeholder {
+  color: #999;
+}
+
+.search-bar-container button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.abd {
+  padding: 5px 10px;  /* Small space inside: 5px top/bottom, 10px left/right */
+  font-size: 12px;    /* Small text size */
+  width: 100px;       /* Small fixed width */
+  height: 40px;       /* Small fixed height */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.abd:hover{
+  background-color: black;
+  color: yellow;
+}
+.abdc {
+  padding: 5px 10px;  /* Small space inside: 5px top/bottom, 10px left/right */
+  font-size: 20px;    /* Small text size */
+  width: 120px;       /* Small fixed width */
+  height: 100px;       /* Small fixed height */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.abdc:hover{
+  background-color: black;
+  color: rgb(32, 10, 236);
+}
+.search-bar-container button:hover {
+  background: #0056b3;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.top-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card .imag {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-head {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.card-text, .rating, .body, .like {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666;
+}
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cards .imag {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cards-head {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.cards-text, .rating, .body, .like {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.rating {
+  font-weight: bold;
+}
+.head{
+  background-color: orange;
+}
+
+/* Add this to your App.js file to wrap your cards */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.write {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 80px;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.write-head {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.write-content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .write {
+      padding: 20px;
+  }
+  .write-head {
+      font-size: 1.5rem;
+  }
+  .write-content {
+      font-size: 1rem;
+  }
+}
