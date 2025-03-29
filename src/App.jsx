@@ -13,10 +13,10 @@ function App(){
           <Navbar />
           <Routes>
           <Route path="/" element={<Library />} />
-        <Route path = "/Cards" element = {<Cd />}/>
+        <Route path = "/cards" element = {<Cd />}/>
   
-        <Route path = "/Authors/" element={<Test/>}/>
-        <Route path ="/Library" element = {<Library />}/>
+        <Route path = "/authors" element={<Test/>}/>
+        <Route path ="/library" element = {<Library />}/>
         
 
           </Routes>
