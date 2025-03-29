@@ -9,7 +9,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App(){
       return(
-        <Router basename="/React-proj">
+        <HashRouter basename="/React-proj">
           <Navbar />
           <Routes>
           <Route path="/" element={<Library />} />
@@ -21,7 +21,7 @@ function App(){
 
           </Routes>
 
-        </Router>
+        </HashRouter>
       );
 
 }
