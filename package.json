@@ -3,7 +3,7 @@
   "name": "sd",
   "private": true,
 "homepage": "https://zayd100.github.io/React-proj/",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -5,7 +5,7 @@ import Navbar from "./Navbar/navbar.jsx";
 import Test from "./Authors/hire.jsx";
 
 import Library from "./Library/library.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App(){
       return(
