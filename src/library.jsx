@@ -197,11 +197,13 @@ function Library(){
 
                 </form>
             </Popup>
+            <div className="button-container">
             <button className="abd" onClick={SortBookYear}>Sort by year</button>
                     <button className="abd" onClick={OldBook}>Sort Oldest</button>
                     <button className="abd" onClick={Maxpage}>Sort Max Pg</button>
                     <button className="abd" onClick={Minpage}>Sort Min Pg</button>
-                    <button className="abd" onClick={deleteRecent}>Delete Recent</button>
+                    <button className="abd" onClick={deleteRecent}>Delete Rec</button>
+                    </div>
             <div className="cards-container">
                 {sortedBooks
                     .filter(books =>

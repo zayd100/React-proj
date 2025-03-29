@@ -2,6 +2,7 @@ import React from "react";
 
 function Write(){
     return(
+        
     <div className="write">
         <h1 className="write-head">
             Let us write your book!
