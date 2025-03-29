@@ -1,4 +1,4 @@
-
+import "./content.css"
 function Content(){
     return(
         <> 

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import "./search.css";
 const Searchb = ({ value, onChange }) => {
   return (
     <div className="search-bar-container">

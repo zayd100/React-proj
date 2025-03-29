@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-
-const Searchauth = ({ value, onChange }) => {
+import "./search.css";
+const SearchBar = ({ value, onChange }) => {
   return (
     <div className="search-bar-container">
       <input
         type="text"
         className="search-input"
-        placeholder="Search by Author Name"
+        placeholder="Search by name, author, or ISBN..."
         value={value}
         onChange={onChange}
       />
@@ -14,9 +14,9 @@ const Searchauth = ({ value, onChange }) => {
   );
 };
 
-Searchauth.propTypes = {
+SearchBar.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 };
 
-export default Searchauth;
+export default SearchBar;

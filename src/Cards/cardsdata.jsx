@@ -1,14 +1,28 @@
 import Card from "./card";
-import Content from "./content";
+import "./cards.css";
+import Content from "../Content/content";
 import { useState } from "react";
-import SearchBar from "./searchbar";
-import diplomacy from "./assets/diplomacy.png";
-import war from "./assets/war.png";
-import power from "./assets/power.png";
-import order from "./assets/order.png";
-
+import SearchBar from "../SearchBars/searchbar";
+import diplomacy from "../assets/diplomacy.png";
+import war from "../assets/war.png";
+import power from "../assets/power.png";
+import order from "../assets/order.png";
+import fire from "../assets/fire.png";
+import "../Styling/buttons.css";
 function Cd() {
   const cardsData = [
+    {
+      bookname: "In the Line of Fire",
+      headline : "A Soldier’s Journey from Battlefield to Presidency",
+      author: "Pervaiz Musharaf",
+      year: 2006,
+      image: fire,
+      rating: 2, 
+      sold: 40000,
+      bestseller: false,
+      isbn:  "ISBN-10: 0743283449"
+
+    },
     {
       bookname: "Diplomacy",
       headline : "A Masterclass on Global Politics by Henry Kissinger",
@@ -49,12 +63,12 @@ function Cd() {
         
         },
           {
-            bookname: "New World Order",
+            bookname: "World Order",
             headline : "Kissinger’s Vision for Global Stability and Power",
             author: "Henry Kissinger",
             year: 2014,
             image: order,
-            rating: 2, 
+            rating: 3, 
             sold: 500000,
             bestseller: false,
             isbn: "ISBN-10: 1594206147; ISBN-13: 978-1594206146."
@@ -130,13 +144,14 @@ setSortedCards(breaks);
 
       <div className="search">
         <SearchBar value={searchQuery} onChange={handleSearchChange} />
-        <button className="abdc" onClick=  {sortByRating}>Sort by Rating</button>
-        <button className="abdc" onClick ={sortmin}>Sort by low Rating</button>
-        <button className="abdc" onClick={sortByAge}>Sort by Recent </button>
-        <button className="abdc" onClick={sortage}>Sort by Oldest </button>
-        <button className="abdc" onClick={mostsold}>Sort By most sold</button>
-        <button className="abdc" onClick={leastsold}>Sort by least sold</button>
-      
+        <div className="button-container">
+        <button className="abd" onClick=  {sortByRating}>Sort by Rating</button>
+        <button className="abd" onClick ={sortmin}>Sort by low Rating</button>
+        <button className="abd" onClick={sortByAge}>Sort by Recent </button>
+        <button className="abd" onClick={sortage}>Sort by Oldest </button>
+        <button className="abd" onClick={mostsold}>Sort By most sold</button>
+        <button className="abd" onClick={leastsold}>Sort by least sold</button>
+          </div>
          
 
          

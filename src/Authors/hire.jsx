@@ -1,10 +1,11 @@
 
 import React from "react";
 import { useState } from "react";
-import Searchauth from "./searchauth";
+import Searchauth from "../SearchBars/searchauth";
 import Authors from "./authors";
-import Write from "./write";
-import Popup from "./popup";
+import Write from "../Content/write";
+import Popup from "../Popups/popup";
+import "../Cards/cards.css";
 function Test(){
     const phal = [
         {naam: "Zach Maxwell", price: 43, year: 2019,rating:1},
@@ -72,11 +73,12 @@ function Test(){
 
         
     return(
+        //wrapped these buttons around the button container, to maintain the horizontal property.
         <div className="f-content">
         <Write/>
                <div className="search">
                 <Searchauth value={searchQuery} onChange={handleSearchChange} />
-              
+    <div className="button-container">              
         <button onClick={sortprice} className="fixed-button">Most Economical</button>
         <button onClick={expensive} className="fixed-button">Top of the Line</button>
         <button onClick={yearsort} className="fixed-button">Recently Partnered</button>
@@ -84,7 +86,7 @@ function Test(){
         <button onClick={sortrate} className="fixed-button">Most Rated</button>
         <button onClick={sortminrate} className="fixed-button">Least Rated</button>
         <button onClick={openpop} className="fixed-button">Partner With Us</button>
-        
+            </div>
         <div>
         <Popup isOpen={isPopupOpen} onClose={closepop}>
              

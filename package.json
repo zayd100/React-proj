@@ -1,7 +1,8 @@
-homepage: "https://github.com/zayd100/React-proj.git"
+
 {
   "name": "sd",
   "private": true,
+  "homepage": "https://github.com/zayd100/React-proj.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

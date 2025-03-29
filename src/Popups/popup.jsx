@@ -1,3 +1,5 @@
+import "./popups.css";
+import "../Styling/buttons.css";
 function Popup({ isOpen, onClose, children }) {
     if (!isOpen) return null;
 
