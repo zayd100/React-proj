@@ -12,11 +12,11 @@ function App(){
         <Router>
           <Navbar />
           <Routes>
-
-        <Route path = "/Cards/cardsdata" element = {<Cd />}/>
+          <Route path="/" element={<Library />} />
+        <Route path = "/Cards" element = {<Cd />}/>
   
-        <Route path = "/Authors/hire" element={<Test/>}/>
-        <Route path ="/Library/library" element = {<Library />}/>
+        <Route path = "/Authors/" element={<Test/>}/>
+        <Route path ="/Library" element = {<Library />}/>
         
 
           </Routes>
