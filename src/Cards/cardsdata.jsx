@@ -123,11 +123,12 @@ setSortedCards(breaks);
 
 
   // Filter cards
+  // site crashed, used old property of origin. Now removed
   const filteredCards = sortedCards.filter(card =>
     card.bookname.toLowerCase().includes(searchQuery.toLowerCase()) ||
     card.headline.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    card.author.toLowerCase().includes(searchQuery.toLowerCase()) || 
-    card.origin.toLowerCase().includes(searchQuery.toLowerCase()) 
+    card.author.toLowerCase().includes(searchQuery.toLowerCase()) 
+   
   );
 
   // Handle search 
